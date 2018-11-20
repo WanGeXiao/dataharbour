@@ -55,3 +55,13 @@ eureka:
     instance:
       lease-expiration-duration-in-seconds: 30
       lease-renewal-interval-in-seconds: 10
+zuul:
+  routes:
+    matchnode:
+      path: /demo/query
+ribbon:
+  eureka:
+    enabled: false
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
+  listOfServers: http://localhost:8080
