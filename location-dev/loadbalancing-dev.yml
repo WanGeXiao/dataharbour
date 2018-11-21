@@ -59,6 +59,6 @@ zuul:
 ribbon:
   eureka:
     enabled: true
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
   listOfServers: http://192.168.1.232:8080
