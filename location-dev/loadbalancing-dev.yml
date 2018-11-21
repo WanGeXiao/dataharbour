@@ -51,6 +51,7 @@ eureka:
     healthcheck:
       enabled: true
     instance:
+      appname: loadbalancing
       lease-expiration-duration-in-seconds: 30
       lease-renewal-interval-in-seconds: 10
 zuul:
