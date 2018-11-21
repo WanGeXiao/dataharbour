@@ -49,11 +49,14 @@ eureka:
     serviceUrl:
       defaultZone: http://192.168.1.232:8080/eureka/
     healthcheck:
-      enabled: true
+      enabled: false
     instance:
       appname: loadbalancing
       lease-expiration-duration-in-seconds: 30
       lease-renewal-interval-in-seconds: 10
+zuul:
+  rotues:
+    matchnode: /demo/**
 ribbon:
   eureka:
     enabled: false
