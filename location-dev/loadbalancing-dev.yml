@@ -1,4 +1,9 @@
 spring:
+  rabbitmq:
+    host: 192.168.1.177
+    port: 5672
+    username: admin
+    password: admin
   datasource:
      url: jdbc:mysql://192.168.1.237:3306/bd_dataharbour_tender?characterEncoding=UTF-8
      username: dataharbour
@@ -49,7 +54,7 @@ fdfs:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8080/eureka/
+      defaultZone: http://192.168.1.232:8080/eureka/
     healthcheck:
       enabled: true
     instance:
@@ -64,4 +69,4 @@ ribbon:
     enabled: false
   ReadTimeout: 3000
   ConnectTimeout: 3000
-  listOfServers: http://localhost:8080
+  listOfServers: http://192.168.1.232:8080
