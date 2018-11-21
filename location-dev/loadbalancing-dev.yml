@@ -59,7 +59,7 @@ zuul:
     socket-timeout-millis: 60000
   routes:
     matchnode:
-      path: /demo/query
+      path: /demo/**
 ribbon:
   eureka:
     enabled: false
