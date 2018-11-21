@@ -54,11 +54,14 @@ eureka:
       lease-expiration-duration-in-seconds: 30
       lease-renewal-interval-in-seconds: 10
 zuul:
+  host: 
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
   routes:
     matchnode:
       path: /demo/query
 ribbon:
   eureka:
     enabled: false
-  ReadTimeout: 3000
-  ConnectTimeout: 3000
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
